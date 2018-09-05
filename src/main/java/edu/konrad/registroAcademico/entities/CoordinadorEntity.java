@@ -46,6 +46,34 @@ public class CoordinadorEntity  implements Serializable {
     public CoordinadorEntity() {
     }
     
+    /**
+     * Métodos set y get
+     */
+
+    public Long getId_coordinador() {
+        return id_coordinador;
+    }
+
+    public void setId_coordinador(Long id_coordinador) {
+        this.id_coordinador = id_coordinador;
+    }
+
+    public String getCod_coordinador() {
+        return cod_coordinador;
+    }
+
+    public void setCod_coordinador(String cod_coordinador) {
+        this.cod_coordinador = cod_coordinador;
+    }
+
+    public Long getPersona_id() {
+        return persona_id;
+    }
+
+    public void setPersona_id(Long persona_id) {
+        this.persona_id = persona_id;
+    }
+    
     
     
     
