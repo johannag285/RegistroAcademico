@@ -16,7 +16,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
 /**
- *Clase encargada de modelar la tabl curso
+ *Clase encargada de modelar la tabla curso
  * @author johannna
  */
 @Entity (name = "Curso")
@@ -35,7 +35,7 @@ public class CursoEntity implements Serializable {
     private String nom_curso;
     
     /**
-     * Atributo que hace referncia a lllave foranea del curso
+     * Atributo que hace referncia a llave foranea del curso
      */
     @Column
     @OneToMany
