@@ -40,7 +40,7 @@ public class CoordinadorEntity  implements Serializable {
      */
     @Column
     @OneToMany
-    private Long persona_id;
+    private Long PERSONA_id;
     
     /**
      * Atributo que hace referencia a la herencia entre persona y coordiandor
@@ -76,13 +76,15 @@ public class CoordinadorEntity  implements Serializable {
         this.cod_coordinador = cod_coordinador;
     }
 
-    public Long getPersona_id() {
-        return persona_id;
+    public Long getPERSONA_id() {
+        return PERSONA_id;
     }
 
-    public void setPersona_id(Long persona_id) {
-        this.persona_id = persona_id;
+    public void setPERSONA_id(Long PERSONA_id) {
+        this.PERSONA_id = PERSONA_id;
     }
+
+    
     
     
     
