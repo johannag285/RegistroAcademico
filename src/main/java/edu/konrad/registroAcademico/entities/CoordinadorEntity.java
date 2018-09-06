@@ -11,7 +11,10 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
+
 
 /**
  *Clase encargada de modelar la tabla Coordinador
@@ -38,6 +41,13 @@ public class CoordinadorEntity  implements Serializable {
     @Column
     @OneToMany
     private Long persona_id;
+    
+    /**
+     * Atributo que hace referencia a la herencia entre persona y coordiandor
+     */
+    @JoinColumn
+    @ManyToOne
+    private PersonaEntity dato;
     
     /**
      * Constructor de entidad de coordiandor
