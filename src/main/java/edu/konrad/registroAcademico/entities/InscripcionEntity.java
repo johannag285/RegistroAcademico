@@ -38,14 +38,14 @@ public class InscripcionEntity implements Serializable {
      */
     @Column
     @OneToMany
-    private Long ESTUDIANTE_id;
+    private Long ESTUDIANTE_id_fk;
     
     /**
      * Atributo que hace referencia a llave foranea de la tabla horario
      */
     @Column
     @OneToMany
-    private Long PROGRAMA_id;
+    private Long HORARIO_id_fk;
 
      /**
      * Contructor de entidad de Inscripcion

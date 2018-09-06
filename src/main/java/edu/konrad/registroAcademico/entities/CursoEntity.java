@@ -39,7 +39,7 @@ public class CursoEntity implements Serializable {
      */
     @Column
     @OneToMany
-    private Long PROGRAMA_id;
+    private Long PROGRAMA_id_fk;
     
     /**
      * Atributo que hace referencia a la herencia entre programa y curso
@@ -73,12 +73,12 @@ public class CursoEntity implements Serializable {
         this.nom_curso = nom_curso;
     }
 
-    public Long getPROGRAMA_id() {
-        return PROGRAMA_id;
+    public Long getPROGRAMA_id_fk() {
+        return PROGRAMA_id_fk;
     }
 
-    public void setPROGRAMA_id(Long PROGRAMA_id) {
-        this.PROGRAMA_id = PROGRAMA_id;
+    public void setPROGRAMA_id_fk(Long PROGRAMA_id) {
+        this.PROGRAMA_id_fk = PROGRAMA_id;
     }
     
     
