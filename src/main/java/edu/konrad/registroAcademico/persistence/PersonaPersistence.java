@@ -13,7 +13,7 @@ import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
 /**
- * Clase es usada para manejar la transaccionalidad de la entidad Persona
+ * Clase usada para manejar la transaccionalidad de la entidad Persona
  * @author johanna
  */
 @Stateless
@@ -38,8 +38,8 @@ public class PersonaPersistence {
      * @return perosna encontrada
      */
     public PersonaEntity find(Long id){
-        PersonaEntity productoEncontrado = entityManager.find(PersonaEntity.class, id);
-        return productoEncontrado;
+        PersonaEntity personaEncontrada = entityManager.find(PersonaEntity.class, id);
+        return personaEncontrada;
     }
     
     /**
