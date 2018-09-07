@@ -29,7 +29,7 @@ public class CoordinadorPersistence {
    */
   
    public List<CoordinadorEntity> findAll(){
-        Query todos = entityManager.createQuery("select p from CoordinadoraEntity p");
+        Query todos = entityManager.createQuery("select p from CoordinadorEntity p");
         return todos.getResultList();
     }
    
@@ -58,7 +58,7 @@ public class CoordinadorPersistence {
    /**
      * Metodo que nos permite actualizar un Coordinador
      * @param coordinadorActualizar
-     * @return 
+     * @return coordinadorActualizar  
      */
    
    public CoordinadorEntity update(CoordinadorEntity coordinadorActualizar){
