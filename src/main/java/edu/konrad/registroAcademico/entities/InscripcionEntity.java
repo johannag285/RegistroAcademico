@@ -53,5 +53,41 @@ public class InscripcionEntity implements Serializable {
     public InscripcionEntity() {
     }
     
+    /**
+     * Métodos set y get
+     */
+
+    public Long getId_inscripcion() {
+        return id_inscripcion;
+    }
+
+    public void setId_inscripcion(Long id_inscripcion) {
+        this.id_inscripcion = id_inscripcion;
+    }
+
+    public Long getSemestre() {
+        return semestre;
+    }
+
+    public void setSemestre(Long semestre) {
+        this.semestre = semestre;
+    }
+
+    public Long getESTUDIANTE_id_fk() {
+        return ESTUDIANTE_id_fk;
+    }
+
+    public void setESTUDIANTE_id_fk(Long ESTUDIANTE_id_fk) {
+        this.ESTUDIANTE_id_fk = ESTUDIANTE_id_fk;
+    }
+
+    public Long getHORARIO_id_fk() {
+        return HORARIO_id_fk;
+    }
+
+    public void setHORARIO_id_fk(Long HORARIO_id_fk) {
+        this.HORARIO_id_fk = HORARIO_id_fk;
+    }
+    
     
 }
