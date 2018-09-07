@@ -13,7 +13,7 @@ import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
 /**
- * Clase es usada para manejar la transaccionalidad de la entidad Persona
+ * Clase usada para manejar la transaccionalidad de la entidad Persona
  * @author johanna
  */
 @Stateless
