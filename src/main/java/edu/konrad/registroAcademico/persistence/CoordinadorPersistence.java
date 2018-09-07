@@ -14,7 +14,7 @@ import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
 /**
- *Clase es usada para manejar la transaccionalidad de la entidad Coordinador 
+ *Clase usada para manejar la transaccionalidad de la entidad Coordinador 
  * @author johanna
  */
 @Stateless
