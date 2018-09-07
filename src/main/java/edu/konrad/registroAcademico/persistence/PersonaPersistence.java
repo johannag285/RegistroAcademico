@@ -38,8 +38,8 @@ public class PersonaPersistence {
      * @return perosna encontrada
      */
     public PersonaEntity find(Long id){
-        PersonaEntity productoEncontrado = entityManager.find(PersonaEntity.class, id);
-        return productoEncontrado;
+        PersonaEntity personaEncontrada = entityManager.find(PersonaEntity.class, id);
+        return personaEncontrada;
     }
     
     /**
