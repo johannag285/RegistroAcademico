@@ -73,6 +73,6 @@ public class CursoPersistence {
     
     public void remove (Long id){
         CursoEntity cursoEliminar = entityManager.find(CursoEntity.class, id);
-        entityManager.refresh(cursoEliminar);
+        entityManager.remove(cursoEliminar);
     }
 }
