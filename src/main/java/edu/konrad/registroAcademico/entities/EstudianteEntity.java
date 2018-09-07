@@ -16,7 +16,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
 /**
- * Clase encargada de modelar la tabla Estudiante
+ * Clase encargada de modelar la tabla estudiante
  *
  * @author Daniela CH
  */
@@ -31,28 +31,26 @@ public class EstudianteEntity implements Serializable {
     private Long id_estudiante;
 
     @ManyToOne
-    @JoinColumn (name = "persona_id_fk")
-    private PersonaEntity persona_id;
-    
+    @JoinColumn(name = "persona_id_fk")
+    private PersonaEntity PERSONA_id;
+
     @ManyToOne
-    @JoinColumn (name = "programa_id_fk")
-    private PersonaEntity programa_id;
-    
+    @JoinColumn(name = "programa_id_fk")
+    private ProgramaEntity PROGRAMA_id;
+
     /**
      * Atributo que hace referencia a la columna del código del estudiante
      */
     @Column
     private String cod_estudiante;
-    
+
     /**
      * Constructor de Estudiante entity
      */
-
     public EstudianteEntity() {
     }
 
     /*Metodos get y set */
-    
     public Long getId_estudiante() {
         return id_estudiante;
     }
@@ -61,20 +59,20 @@ public class EstudianteEntity implements Serializable {
         this.id_estudiante = id_estudiante;
     }
 
-    public PersonaEntity getPersona_id() {
-        return persona_id;
+    public PersonaEntity getPERSONA_id() {
+        return PERSONA_id;
     }
 
-    public void setPersona_id(PersonaEntity persona_id) {
-        this.persona_id = persona_id;
+    public void setPERSONA_id(PersonaEntity PERSONA_id) {
+        this.PERSONA_id = PERSONA_id;
     }
 
-    public PersonaEntity getPrograma_id() {
-        return programa_id;
+    public ProgramaEntity getPROGRAMA_id() {
+        return PROGRAMA_id;
     }
 
-    public void setPrograma_id(PersonaEntity programa_id) {
-        this.programa_id = programa_id;
+    public void setPROGRAMA_id(ProgramaEntity PROGRAMA_id) {
+        this.PROGRAMA_id = PROGRAMA_id;
     }
 
     public String getCod_estudiante() {
@@ -84,7 +82,5 @@ public class EstudianteEntity implements Serializable {
     public void setCod_estudiante(String cod_estudiante) {
         this.cod_estudiante = cod_estudiante;
     }
-    
-   
-}
 
+}
