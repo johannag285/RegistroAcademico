@@ -11,6 +11,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
 /**
@@ -36,16 +38,16 @@ public class InscripcionEntity implements Serializable {
     /**
      * Atributo que hace referencia a la llave foranea de la tabla estudiante
      */
-    @Column
-    @OneToMany
-    private Long ESTUDIANTE_id_fk;
+    @ManyToOne
+    @JoinColumn(name = "ESTUDIANTE_id_fk")
+    private EstudianteEntity ESTUDIANTE_id_fk;
     
     /**
      * Atributo que hace referencia a llave foranea de la tabla horario
      */
-    @Column
-    @OneToMany
-    private Long HORARIO_id_fk;
+    @ManyToOne
+    @JoinColumn(name = "HORARIO_id_fk")
+    private HorarioEntity HORARIO_id_fk;
 
      /**
      * Contructor de entidad de Inscripcion
@@ -73,21 +75,23 @@ public class InscripcionEntity implements Serializable {
         this.semestre = semestre;
     }
 
-    public Long getESTUDIANTE_id_fk() {
+    public EstudianteEntity getESTUDIANTE_id_fk() {
         return ESTUDIANTE_id_fk;
     }
 
-    public void setESTUDIANTE_id_fk(Long ESTUDIANTE_id_fk) {
+    public void setESTUDIANTE_id_fk(EstudianteEntity ESTUDIANTE_id_fk) {
         this.ESTUDIANTE_id_fk = ESTUDIANTE_id_fk;
     }
 
-    public Long getHORARIO_id_fk() {
+    public HorarioEntity getHORARIO_id_fk() {
         return HORARIO_id_fk;
     }
 
-    public void setHORARIO_id_fk(Long HORARIO_id_fk) {
+    public void setHORARIO_id_fk(HorarioEntity HORARIO_id_fk) {
         this.HORARIO_id_fk = HORARIO_id_fk;
     }
+
+    
     
     
 }
