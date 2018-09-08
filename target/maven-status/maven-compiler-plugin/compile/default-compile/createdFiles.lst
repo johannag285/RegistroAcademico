@@ -1,0 +1,14 @@
+edu\konrad\registroAcademico\entities\EstudianteEntity.class
+edu\konrad\registroAcademico\persistence\CursoPersistence.class
+edu\konrad\registroAcademico\entities\GrupoEntity.class
+edu\konrad\registroAcademico\entities\HorarioEntity.class
+edu\konrad\registroAcademico\entities\InscripcionEntity.class
+edu\konrad\registroAcademico\persistence\InscripcionPersistence.class
+edu\konrad\registroAcademico\entities\FacultadEntity.class
+edu\konrad\registroAcademico\entities\PersonaEntity.class
+edu\konrad\registroAcademico\entities\CoordinadorEntity.class
+edu\konrad\registroAcademico\entities\ProfesorEntity.class
+edu\konrad\registroAcademico\persistence\PersonaPersistence.class
+edu\konrad\registroAcademico\entities\CursoEntity.class
+edu\konrad\registroAcademico\entities\ProgramaEntity.class
+edu\konrad\registroAcademico\persistence\CoordinadorPersistence.class

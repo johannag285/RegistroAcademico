@@ -31,11 +31,11 @@ public class GrupoEntity implements Serializable {
 
     @ManyToOne
     @JoinColumn(name = "curso_id_fk")
-    private CursoEntity curso_id;
+    private CursoEntity CURSO_id;
 
     @ManyToOne
     @JoinColumn(name = "profesor_id_fk")
-    private ProfesorEntity profesor_id;
+    private ProfesorEntity PROFESOR_id;
 
     /**
      * Atributo que hace referencia a la columna de la cantidad de inscritos
@@ -58,20 +58,20 @@ public class GrupoEntity implements Serializable {
         this.id_grupo = id_grupo;
     }
 
-    public CursoEntity getCurso_id() {
-        return curso_id;
+    public CursoEntity getCURSO_id() {
+        return CURSO_id;
     }
 
-    public void setCurso_id(CursoEntity curso_id) {
-        this.curso_id = curso_id;
+    public void setCURSO_id(CursoEntity CURSO_id) {
+        this.CURSO_id = CURSO_id;
     }
 
-    public ProfesorEntity getProfesor_id() {
-        return profesor_id;
+    public ProfesorEntity getPROFESOR_id() {
+        return PROFESOR_id;
     }
 
-    public void setProfesor_id(ProfesorEntity profesor_id) {
-        this.profesor_id = profesor_id;
+    public void setPROFESOR_id(ProfesorEntity PROFESOR_id) {
+        this.PROFESOR_id = PROFESOR_id;
     }
 
     public long getCantidad_inscritos() {

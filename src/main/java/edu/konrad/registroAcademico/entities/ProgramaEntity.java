@@ -15,15 +15,14 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
 /**
- * Clase encargada de modelar la tabla Programa
+ * Clase encargada de modelar la tabla programa
  *
  * @author Daniela CH
  */
-
 @Entity(name = "Programa")
-public class ProgramaEntity implements Serializable{
-    
-     /**
+public class ProgramaEntity implements Serializable {
+
+    /**
      * Llave primaria de la tabla programa
      */
     @Id
@@ -34,6 +33,7 @@ public class ProgramaEntity implements Serializable{
     * Atributo que hace referencia a la llave foranea de la tabla facultad
     */
     @ManyToOne
+<<<<<<< HEAD
     @JoinColumn (name = "FACULTAD_id_fk")
     private FacultadEntity FACULTAD_id_fk;
     /**
@@ -44,20 +44,27 @@ public class ProgramaEntity implements Serializable{
     @JoinColumn (name = "COORDINADOR_id_fk")
     private CoordinadorEntity COORDINADOR_id_fk;
     
+=======
+    @JoinColumn(name = "facultad_id_fk")
+    private FacultadEntity FACULTAD_id;
+
+    @ManyToOne
+    @JoinColumn(name = "coordinador_id_fk")
+    private CoordinadorEntity COORDINADOR_id;
+
+>>>>>>> 72e48f1079522035abc648e1e5a5acc97a4633c0
     /**
      * Atributo que hace referencia a la columna del nombre del programa
      */
-    
     @Column
     private String nom_programa;
-    
+
     /**
      * Atributo que hace referencia a la columna del tipo del programa
      */
-    
     @Column
     private String tipo_programa;
-    
+
     /**
      * Atributo que hace referencia a la columna del nivel academico
      */
@@ -67,10 +74,9 @@ public class ProgramaEntity implements Serializable{
     /**
      * Constructor Programa entity
      */
-    
     public ProgramaEntity() {
     }
-    
+
     /* Metodos get y set*/
     
     public Long getId_programa() {
@@ -81,6 +87,25 @@ public class ProgramaEntity implements Serializable{
         this.id_programa = id_programa;
     }
 
+<<<<<<< HEAD
+=======
+    public FacultadEntity getFACULTAD_id() {
+        return FACULTAD_id;
+    }
+
+    public void setFACULTAD_id(FacultadEntity FACULTAD_id) {
+        this.FACULTAD_id = FACULTAD_id;
+    }
+
+    public CoordinadorEntity getCOORDINADOR_id() {
+        return COORDINADOR_id;
+    }
+
+    public void setCOORDINADOR_id(CoordinadorEntity COORDINADOR_id) {
+        this.COORDINADOR_id = COORDINADOR_id;
+    }
+
+>>>>>>> 72e48f1079522035abc648e1e5a5acc97a4633c0
     public String getNom_programa() {
         return nom_programa;
     }
@@ -105,6 +130,7 @@ public class ProgramaEntity implements Serializable{
         this.nivel_academico = nivel_academico;
     }
 
+<<<<<<< HEAD
     public FacultadEntity getFACULTAD_id_fk() {
         return FACULTAD_id_fk;
     }
@@ -123,4 +149,6 @@ public class ProgramaEntity implements Serializable{
     
     
    
+=======
+>>>>>>> 72e48f1079522035abc648e1e5a5acc97a4633c0
 }
