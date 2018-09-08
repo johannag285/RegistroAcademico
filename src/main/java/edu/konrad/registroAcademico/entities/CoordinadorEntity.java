@@ -15,51 +15,43 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
-
 /**
- *Clase encargada de modelar la tabla Coordinador
+ * Clase encargada de modelar la tabla Coordinador
+ *
  * @author Johanna G.
  */
-@Entity (name="Coordinador" )
-public class CoordinadorEntity  implements Serializable {
+@Entity(name = "Coordinador")
+public class CoordinadorEntity implements Serializable {
+
     /**
      * Llave priamria de la tabla Coordinador
      */
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id_coordinador;
-    
+
     /**
      * Atributo que hace referencia a la columna del código del coordinador
      */
     @Column
     private String cod_coordinador;
-    
+
     /**
      * Atributo que hace referencia a la llave foranea de la tabla Persona
      */
-    @Column
-    @OneToMany
-    private Long PERSONA_id_fk;
-    
-    /**
-     * Atributo que hace referencia a la herencia entre persona y coordiandor
-     */
-    @JoinColumn
     @ManyToOne
-    private PersonaEntity dato;
-    
+    @JoinColumn(name = "PERSONA_id_fk")
+    private PersonaEntity PERSONA_id_fk;
+
     /**
      * Constructor de entidad de coordiandor
      */
-
     public CoordinadorEntity() {
     }
-    
+
     /**
      * Métodos set y get
      */
-
     public Long getId_coordinador() {
         return id_coordinador;
     }
@@ -76,17 +68,15 @@ public class CoordinadorEntity  implements Serializable {
         this.cod_coordinador = cod_coordinador;
     }
 
-    public Long getPERSONA_id_fk() {
+    public PersonaEntity getPERSONA_id_fk() {
         return PERSONA_id_fk;
     }
 
-    public void setPERSONA_id_fk(Long PERSONA_id) {
-        this.PERSONA_id_fk = PERSONA_id;
+    public void setPERSONA_id_fk(PersonaEntity PERSONA_id_fk) {
+        this.PERSONA_id_fk = PERSONA_id_fk;
     }
 
-    
-    
-    
-    
-    
+   
 }
+
+
