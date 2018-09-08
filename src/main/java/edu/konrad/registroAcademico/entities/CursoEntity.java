@@ -35,18 +35,12 @@ public class CursoEntity implements Serializable {
     private String nom_curso;
     
     /**
-     * Atributo que hace referncia a llave foranea del curso
+     * Atributo que hace referncia a llave foranea del programa
      */
-    @Column
-    @OneToMany
-    private Long PROGRAMA_id_fk;
+    @ManyToOne
+    @JoinColumn(name = "PROGRAMA_id_fk")
+    private ProgramaEntity PROGRAMA_id_fk;
     
-    /**
-     * Atributo que hace referencia a la herencia entre programa y curso
-     */
-   // @JoinColumn
-    //@ManyToOne 
-    //private ProgramaEntity dato;
 
     /**
      * Contructor de entidad de curso
@@ -73,14 +67,12 @@ public class CursoEntity implements Serializable {
         this.nom_curso = nom_curso;
     }
 
-    public Long getPROGRAMA_id_fk() {
+    public ProgramaEntity getPROGRAMA_id_fk() {
         return PROGRAMA_id_fk;
     }
 
-    public void setPROGRAMA_id_fk(Long PROGRAMA_id) {
-        this.PROGRAMA_id_fk = PROGRAMA_id;
+    public void setPROGRAMA_id_fk(ProgramaEntity PROGRAMA_id_fk) {
+        this.PROGRAMA_id_fk = PROGRAMA_id_fk;
     }
-    
-    
-    
+        
 }
