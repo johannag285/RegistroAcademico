@@ -28,14 +28,18 @@ public class GrupoEntity implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id_grupo;
-
+     /**
+     * Llave foranea de la tabla curso
+     */
     @ManyToOne
     @JoinColumn(name = "curso_id_fk")
-    private CursoEntity CURSO_id;
-
+    private CursoEntity CURSO_id_fk;
+     /**
+     * Llave foranea de la tabla profesor
+     */
     @ManyToOne
     @JoinColumn(name = "profesor_id_fk")
-    private ProfesorEntity PROFESOR_id;
+    private ProfesorEntity PROFESOR_id_fk;
 
     /**
      * Atributo que hace referencia a la columna de la cantidad de inscritos
@@ -58,20 +62,20 @@ public class GrupoEntity implements Serializable {
         this.id_grupo = id_grupo;
     }
 
-    public CursoEntity getCURSO_id() {
-        return CURSO_id;
+    public CursoEntity getCURSO_id_fk() {
+        return CURSO_id_fk;
     }
 
-    public void setCURSO_id(CursoEntity CURSO_id) {
-        this.CURSO_id = CURSO_id;
+    public void setCURSO_id_fk(CursoEntity CURSO_id_fk) {
+        this.CURSO_id_fk = CURSO_id_fk;
     }
 
-    public ProfesorEntity getPROFESOR_id() {
-        return PROFESOR_id;
+    public ProfesorEntity getPROFESOR_id_fk() {
+        return PROFESOR_id_fk;
     }
 
-    public void setPROFESOR_id(ProfesorEntity PROFESOR_id) {
-        this.PROFESOR_id = PROFESOR_id;
+    public void setPROFESOR_id_fk(ProfesorEntity PROFESOR_id_fk) {
+        this.PROFESOR_id_fk = PROFESOR_id_fk;
     }
 
     public long getCantidad_inscritos() {
