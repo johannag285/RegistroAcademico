@@ -33,7 +33,6 @@ public class ProgramaEntity implements Serializable {
     * Atributo que hace referencia a la llave foranea de la tabla facultad
     */
     @ManyToOne
-
     @JoinColumn (name = "FACULTAD_id_fk")
     private FacultadEntity FACULTAD_id_fk;
     /**
@@ -44,13 +43,6 @@ public class ProgramaEntity implements Serializable {
     @JoinColumn (name = "COORDINADOR_id_fk")
     private CoordinadorEntity COORDINADOR_id_fk;
     
-
-    @JoinColumn(name = "facultad_id_fk")
-    private FacultadEntity FACULTAD_id;
-
-    @ManyToOne
-    @JoinColumn(name = "coordinador_id_fk")
-    private CoordinadorEntity COORDINADOR_id;
 
 
     /**
@@ -86,24 +78,6 @@ public class ProgramaEntity implements Serializable {
     public void setId_programa(Long id_programa) {
         this.id_programa = id_programa;
     }
-
-
-    public FacultadEntity getFACULTAD_id() {
-        return FACULTAD_id;
-    }
-
-    public void setFACULTAD_id(FacultadEntity FACULTAD_id) {
-        this.FACULTAD_id = FACULTAD_id;
-    }
-
-    public CoordinadorEntity getCOORDINADOR_id() {
-        return COORDINADOR_id;
-    }
-
-    public void setCOORDINADOR_id(CoordinadorEntity COORDINADOR_id) {
-        this.COORDINADOR_id = COORDINADOR_id;
-    }
-
 
     public String getNom_programa() {
         return nom_programa;
