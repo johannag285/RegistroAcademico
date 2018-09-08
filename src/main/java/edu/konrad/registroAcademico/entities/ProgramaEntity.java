@@ -29,14 +29,20 @@ public class ProgramaEntity implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id_programa;
-
+    
+   /**
+    * Atributo que hace referencia a la llave foranea de la tabla facultad
+    */
     @ManyToOne
-    @JoinColumn (name = "facultad_id_fk")
-    private FacultadEntity facultad_id;
+    @JoinColumn (name = "FACULTAD_id_fk")
+    private FacultadEntity FACULTAD_id_fk;
+    /**
+     * Atributo qu hace referencia a la llave foranea de la tabla coordinador
+     */
     
     @ManyToOne
-    @JoinColumn (name = "coordinador_id_fk")
-    private CoordinadorEntity coordinador_id;
+    @JoinColumn (name = "COORDINADOR_id_fk")
+    private CoordinadorEntity COORDINADOR_id_fk;
     
     /**
      * Atributo que hace referencia a la columna del nombre del programa
@@ -75,22 +81,6 @@ public class ProgramaEntity implements Serializable{
         this.id_programa = id_programa;
     }
 
-    public FacultadEntity getFacultad_id() {
-        return facultad_id;
-    }
-
-    public void setFacultad_id(FacultadEntity facultad_id) {
-        this.facultad_id = facultad_id;
-    }
-
-    public CoordinadorEntity getCoordinador_id() {
-        return coordinador_id;
-    }
-
-    public void setCoordinador_id(CoordinadorEntity coordinador_id) {
-        this.coordinador_id = coordinador_id;
-    }
-
     public String getNom_programa() {
         return nom_programa;
     }
@@ -114,5 +104,23 @@ public class ProgramaEntity implements Serializable{
     public void setNivel_academico(String nivel_academico) {
         this.nivel_academico = nivel_academico;
     }
+
+    public FacultadEntity getFACULTAD_id_fk() {
+        return FACULTAD_id_fk;
+    }
+
+    public void setFACULTAD_id_fk(FacultadEntity FACULTAD_id_fk) {
+        this.FACULTAD_id_fk = FACULTAD_id_fk;
+    }
+
+    public CoordinadorEntity getCOORDINADOR_id_fk() {
+        return COORDINADOR_id_fk;
+    }
+
+    public void setCOORDINADOR_id_fk(CoordinadorEntity COORDINADOR_id_fk) {
+        this.COORDINADOR_id_fk = COORDINADOR_id_fk;
+    }
+    
+    
    
 }
