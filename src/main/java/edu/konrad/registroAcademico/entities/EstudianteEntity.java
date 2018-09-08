@@ -30,13 +30,18 @@ public class EstudianteEntity implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id_estudiante;
 
+    /**
+     * Llave foranea de la tabla persona
+     */
     @ManyToOne
     @JoinColumn(name = "persona_id_fk")
-    private PersonaEntity PERSONA_id;
-
+    private PersonaEntity PERSONA_id_fk;
+    /**
+     * Llave foranea de la tabla programa
+     */
     @ManyToOne
     @JoinColumn(name = "programa_id_fk")
-    private ProgramaEntity PROGRAMA_id;
+    private ProgramaEntity PROGRAMA_id_fk;
 
     /**
      * Atributo que hace referencia a la columna del código del estudiante
@@ -59,22 +64,21 @@ public class EstudianteEntity implements Serializable {
         this.id_estudiante = id_estudiante;
     }
 
-    public PersonaEntity getPERSONA_id() {
-        return PERSONA_id;
+    public PersonaEntity getPERSONA_id_fk() {
+        return PERSONA_id_fk;
     }
 
-    public void setPERSONA_id(PersonaEntity PERSONA_id) {
-        this.PERSONA_id = PERSONA_id;
+    public void setPERSONA_id_fk(PersonaEntity PERSONA_id_fk) {
+        this.PERSONA_id_fk = PERSONA_id_fk;
     }
 
-    public ProgramaEntity getPROGRAMA_id() {
-        return PROGRAMA_id;
+    public ProgramaEntity getPROGRAMA_id_fk() {
+        return PROGRAMA_id_fk;
     }
 
-    public void setPROGRAMA_id(ProgramaEntity PROGRAMA_id) {
-        this.PROGRAMA_id = PROGRAMA_id;
+    public void setPROGRAMA_id_fk(ProgramaEntity PROGRAMA_id_fk) {
+        this.PROGRAMA_id_fk = PROGRAMA_id_fk;
     }
-
     public String getCod_estudiante() {
         return cod_estudiante;
     }
