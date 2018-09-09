@@ -39,29 +39,24 @@ public class ProfesorEntity implements Serializable{
     /**
      * Atributo de la tabla Profesor que hace referencia a la llave foranea que conecta con la tabla Persona.
      */
-    @Column
-    @OneToMany
-    private long PERSONA_id_fk;
+    @ManyToOne
+    @JoinColumn(name = "PERSONA_id_fk")
+    private PersonaEntity PERSONA_id_fk;
     
     /**
      * Atributo de la tabla Profesor que hace referencia a la llave foranea que conecta con la tabla Programa.
      */
-    @Column
-    @OneToMany
-    private long PROGRAMA_id_fk;
+    @ManyToOne
+    @JoinColumn(name = "PROGRAMA_id_fk")
+    private ProgramaEntity PROGRAMA_id_fk;
     
     /**
      * Atributo de la tabla Profesor que hace referencia al area de profundización del docente.
      */
     @Column
-    private String area_profun;
+    private String area_profundizacion;
 
-    /**
-     * Atributo que hace referencia que la tabla Profesor hereda de Persona.
-     */
-    @JoinColumn
-    @ManyToOne
-    private PersonaEntity dato;
+   
     
     /**
      * Constructor de la tabla ProfesorEntity.
@@ -69,65 +64,51 @@ public class ProfesorEntity implements Serializable{
     public ProfesorEntity(){
         
     }
-
-    /**
+    
+      /**
      * Metodos Getters y Setters de la tabla Profesor.
      */
+
     public Long getId_profesor() {
         return id_profesor;
-    }
-
-    public String getCod_profesor() {
-        return cod_profesor;
-    }
-
-    public long getPERSONA_id_fk() {
-        return PERSONA_id_fk;
-    }
-
-    public long getPROGRAMA_id_fk() {
-        return PROGRAMA_id_fk;
-    }
-
-    public String getArea_profun() {
-        return area_profun;
-    }
-
-    public PersonaEntity getDato() {
-        return dato;
     }
 
     public void setId_profesor(Long id_profesor) {
         this.id_profesor = id_profesor;
     }
 
+    public String getCod_profesor() {
+        return cod_profesor;
+    }
+
     public void setCod_profesor(String cod_profesor) {
         this.cod_profesor = cod_profesor;
     }
 
-    public void setPERSONA_id_fk(long PERSONA_id_fk) {
+    public PersonaEntity getPERSONA_id_fk() {
+        return PERSONA_id_fk;
+    }
+
+    public void setPERSONA_id_fk(PersonaEntity PERSONA_id_fk) {
         this.PERSONA_id_fk = PERSONA_id_fk;
     }
 
-    public void setPROGRAMA_id_fk(long PROGRAMA_id_fk) {
+    public ProgramaEntity getPROGRAMA_id_fk() {
+        return PROGRAMA_id_fk;
+    }
+
+    public void setPROGRAMA_id_fk(ProgramaEntity PROGRAMA_id_fk) {
         this.PROGRAMA_id_fk = PROGRAMA_id_fk;
     }
 
-    public void setArea_profun(String area_profun) {
-        this.area_profun = area_profun;
+    public String getArea_profundizacion() {
+        return area_profundizacion;
     }
 
-    public void setDato(PersonaEntity dato) {
-        this.dato = dato;
+    public void setArea_profundizacion(String area_profundizacion) {
+        this.area_profundizacion = area_profundizacion;
     }
-    
-    
-    
-    
-    
-    
-    
-    
+  
     
     
 }

@@ -10,6 +10,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
 /**
@@ -53,7 +55,70 @@ public class HorarioEntity {
     /**
      * Atributo de la tabla Horario que hace referencia a la llave foranea que conecta con la tabla Grupo.
      */
-    @Column
-    @OneToMany
-    private long GRUPO_id_fk;
+    @ManyToOne
+    @JoinColumn(name="GRUPO_id_fk")
+    private GrupoEntity GRUPO_id_fk;
+
+    
+    /**
+     * Constructor de la tabla HorarioEntity.
+     */
+    public HorarioEntity() {
+    }
+    
+    
+    
+     /**
+     * Metodos Getters y Setters de la tabla HorarioEntity.
+     */
+
+    public Long getId_horario() {
+        return id_horario;
+    }
+
+    public void setId_horario(Long id_horario) {
+        this.id_horario = id_horario;
+    }
+
+    public String getDia_horario() {
+        return dia_horario;
+    }
+
+    public void setDia_horario(String dia_horario) {
+        this.dia_horario = dia_horario;
+    }
+
+    public long getInicio_clase() {
+        return inicio_clase;
+    }
+
+    public void setInicio_clase(long inicio_clase) {
+        this.inicio_clase = inicio_clase;
+    }
+
+    public long getFin_clase() {
+        return fin_clase;
+    }
+
+    public void setFin_clase(long fin_clase) {
+        this.fin_clase = fin_clase;
+    }
+
+    public String getSalon_clase() {
+        return salon_clase;
+    }
+
+    public void setSalon_clase(String salon_clase) {
+        this.salon_clase = salon_clase;
+    }
+
+    public GrupoEntity getGRUPO_id_fk() {
+        return GRUPO_id_fk;
+    }
+
+    public void setGRUPO_id_fk(GrupoEntity GRUPO_id_fk) {
+        this.GRUPO_id_fk = GRUPO_id_fk;
+    }
+    
+    
 }
