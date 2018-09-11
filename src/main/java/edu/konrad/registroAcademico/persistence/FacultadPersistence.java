@@ -49,7 +49,7 @@ public class FacultadPersistence {
         /**
          * Este metodo nos permite crear una facultad
          * @param facultadCrear
-         * @return personaCrear
+         * @return facultadCrear
          */
         public FacultadEntity create(FacultadEntity facultadCrear){
             entityManager.persist(facultadCrear);
