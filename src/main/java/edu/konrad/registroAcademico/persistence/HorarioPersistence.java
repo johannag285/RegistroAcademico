@@ -34,14 +34,14 @@ public class HorarioPersistence {
     }
 
         /**
-         * Método que encuentra una horario por su Id
+         * Método que encuentra un horario por su Id
          *
          * @param id
          * @return horario encontrado
          */
         public HorarioEntity find(Long id){
-            HorarioEntity horarioEncontrada = entityManager.find(HorarioEntity.class, id);
-            return horarioEncontrada;
+            HorarioEntity horarioEncontrado = entityManager.find(HorarioEntity.class, id);
+            return horarioEncontrado;
         }
         
         /**
