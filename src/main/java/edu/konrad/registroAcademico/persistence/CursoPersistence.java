@@ -67,7 +67,7 @@ public class CursoPersistence {
     }
     
     /**
-     * Metodo que nos permite eleiminar un Cusro
+     * Metodo que nos permite eleiminar un Curso
      * @param id 
      */
     
