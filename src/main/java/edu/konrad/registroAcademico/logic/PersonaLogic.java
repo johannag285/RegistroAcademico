@@ -23,7 +23,7 @@ public class PersonaLogic {
     private PersonaPersistence personaPersistence;
     
      /**
-      * Obtener el listado de personas 
+      * método que permite Obtener el listado de personas 
       * @return personas
       */
     
@@ -33,7 +33,7 @@ public class PersonaLogic {
     }
     
      /**
-      * Obtener una persona a traves de su Id
+      * método que permite Obtener una persona a traves de su Id
       * @param Id
       * @return 
       */
@@ -46,7 +46,7 @@ public class PersonaLogic {
         return persona;
     }
      /**
-      * Crear una nueva persona 
+      * método que permite Crear una nueva persona 
       * @param personaEntity
       * @return 
       */
@@ -56,7 +56,7 @@ public class PersonaLogic {
         return personaEntity;
     }
      /**
-      * Actualizar persona
+      * método que permite Actualizar persona
       * @param id
       * @param personaEntity
       * @return 
@@ -67,7 +67,7 @@ public class PersonaLogic {
         return persona;
     }
      /**
-      * Eliminar Persona por su Id
+      * método que permite Eliminar Persona por su Id
       * @param id 
       */
     public void deletePersona(Long id){
