@@ -9,12 +9,14 @@ import com.oracle.jrockit.jfr.Producer;
 import edu.konrad.registroAcademico.entities.PersonaEntity;
 import edu.konrad.registroAcademico.persistence.PersonaPersistence;
 import java.util.List;
+import javax.ejb.Stateless;
 import javax.inject.Inject;
 
 /**
  *Lógica del negocio Persona
  * @author johanna
  */
+@Stateless
 public class PersonaLogic {
     
     @Inject
