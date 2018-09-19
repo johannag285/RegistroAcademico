@@ -35,7 +35,7 @@ public class PersonaLogic {
      /**
       * método que permite Obtener una persona a traves de su Id
       * @param Id
-      * @return 
+      * @return persona
       */
     
     public PersonaEntity getPersona (Long Id){
@@ -48,7 +48,7 @@ public class PersonaLogic {
      /**
       * método que permite Crear una nueva persona 
       * @param personaEntity
-      * @return 
+      * @return personaEntity
       */
     
     public PersonaEntity createPersona(PersonaEntity personaEntity){
@@ -59,7 +59,7 @@ public class PersonaLogic {
       * método que permite Actualizar persona
       * @param id
       * @param personaEntity
-      * @return 
+      * @return persona
       */
     
     public PersonaEntity update(Long id, PersonaEntity personaEntity){

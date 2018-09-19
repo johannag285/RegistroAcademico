@@ -49,7 +49,7 @@ public class CoordinadorLogic {
     /**
      * método que permite Crear un nuevo coordinador
      * @param coordinadorEntity
-     * @return 
+     * @return coordinadorEntity
      */
     
     public CoordinadorEntity createCoordinador(CoordinadorEntity coordinadorEntity){
@@ -60,7 +60,7 @@ public class CoordinadorLogic {
      * método que permite Actualizar un coordinador
      * @param id
      * @param coordinadorEntity
-     * @return 
+     * @return coordinador
      */
     public CoordinadorEntity updateCoordinador(Long id,CoordinadorEntity coordinadorEntity){
         CoordinadorEntity coordinador = coordinadorPersistence.update(coordinadorEntity);
