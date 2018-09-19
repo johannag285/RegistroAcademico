@@ -12,7 +12,7 @@ import javax.ejb.Stateless;
 import javax.inject.Inject;
 
 /**
- *
+ *Lógica del negocio Curso
  * @author johanna
  */
 @Stateless

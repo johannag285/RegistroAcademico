@@ -5,7 +5,7 @@
  */
 package edu.konrad.registroAcademico.logic;
 
-import com.oracle.jrockit.jfr.Producer;
+
 import edu.konrad.registroAcademico.entities.PersonaEntity;
 import edu.konrad.registroAcademico.persistence.PersonaPersistence;
 import java.util.List;
