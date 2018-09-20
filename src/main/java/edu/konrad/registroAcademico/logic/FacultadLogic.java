@@ -33,7 +33,7 @@ public class FacultadLogic {
     /**
       * método que permite Obtener una facultad a traves de su Id
       * @param Id
-      * @return persona
+      * @return facultad
       */
     public FacultadEntity getFacultad (Long Id){
         FacultadEntity facultad = facultadPersistence.find(Id);
