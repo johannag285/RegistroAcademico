@@ -82,7 +82,7 @@ public class GrupoEntity implements Serializable {
         return cantidad_inscritos;
     }
 
-    public void setCantidad_inscritos(int cantidad_inscritos) {
+    public void setCantidad_inscritos(Long cantidad_inscritos) {
         this.cantidad_inscritos = cantidad_inscritos;
     }
 
