@@ -68,7 +68,7 @@ public class PersonaDTO {
     
      /**
       * Mapeo de objeto a tabla
-      * @return 
+      * @return entity
       */
     
     public PersonaEntity toEntity(){
@@ -84,14 +84,14 @@ public class PersonaDTO {
     }
     /**
      * Conversor lista entidad persona a lista de objetos persona
-     * @param productoEntitys
-     * @return 
+     * @param personaEntitys
+     * @return listaObjetoPersona
      */
      
-    public static List<PersonaDTO> toListPersona(List<PersonaEntity> productoEntitys){
+    public static List<PersonaDTO> toListPersona(List<PersonaEntity> personaEntitys){
         List<PersonaDTO> listaObjetoPersona = new ArrayList<>();
-        for(int i=0; i<productoEntitys.size();i++ ){
-            listaObjetoPersona.add(new PersonaDTO (productoEntitys.get(i)));
+        for(int i=0; i<personaEntitys.size();i++ ){
+            listaObjetoPersona.add(new PersonaDTO (personaEntitys.get(i)));
         }
         return listaObjetoPersona;
     }  
