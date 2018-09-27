@@ -6,6 +6,8 @@
 package edu.konrad.registroAcademico.dto;
 
 import edu.konrad.registroAcademico.entities.PersonaEntity;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Lógica de transformación de entity a DTO y de DTO a entity
@@ -80,6 +82,79 @@ public class PersonaDTO {
        entity.setEmail(this.email);
        return entity;
     }
+    /**
+     * Conversor lista entidad persona a lista de objetos persona
+     * @param productoEntitys
+     * @return 
+     */
      
+    public static List<PersonaDTO> toListPersona(List<PersonaEntity> productoEntitys){
+        List<PersonaDTO> listaObjetoPersona = new ArrayList<>();
+        for(int i=0; i<productoEntitys.size();i++ ){
+            listaObjetoPersona.add(new PersonaDTO (productoEntitys.get(i)));
+        }
+        return listaObjetoPersona;
+    }  
+
+    /**
+     * Métodos get y set
+     */
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+
+    public String getTipo_documento() {
+        return tipo_documento;
+    }
+
+    public void setTipo_documento(String tipo_documento) {
+        this.tipo_documento = tipo_documento;
+    }
+
+    public String getNum_documento() {
+        return num_documento;
+    }
+
+    public void setNum_documento(String num_documento) {
+        this.num_documento = num_documento;
+    }
+
+    public String getGenero() {
+        return genero;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+    
+    
     
 }
