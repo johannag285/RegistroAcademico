@@ -58,7 +58,7 @@ public class CoordinadorDTO {
     }
     
     /**
-     * 
+     * Conversor lista entidad coordiandor a lista de objetos coordindor
      * @param coordinadorEntitys
      * @return listaObjetoCoordinador
      */
