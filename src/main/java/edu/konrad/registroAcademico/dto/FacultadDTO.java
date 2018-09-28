@@ -6,6 +6,8 @@
 package edu.konrad.registroAcademico.dto;
 
 import edu.konrad.registroAcademico.entities.FacultadEntity;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -56,4 +58,46 @@ public class FacultadDTO {
        entity.setNivel_academico(this.nivel_academico);
        return entity;
     }
+    
+    /**
+     * Conversor lista entidad facultad a lista de objetos facultad
+     * @param facultadEntitys
+     * @return listaObjetoFacultad
+     */
+    public static List<FacultadDTO> toListFacultad(List<FacultadEntity> facultadEntitys){
+        List<FacultadDTO> listaObjetoFacultad = new ArrayList<>();
+        for(int i=0; i<facultadEntitys.size();i++ ){
+            listaObjetoFacultad.add(new FacultadDTO (facultadEntitys.get(i)));
+        }
+        return listaObjetoFacultad;
+    }  
+
+    /**
+     * Métodos get y set
+     */
+    public Long getId() {
+        return id;
+    }
+
+    public String getNom_facultad() {
+        return nom_facultad;
+    }
+
+    public String getNivel_academico() {
+        return nivel_academico;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setNom_facultad(String nom_facultad) {
+        this.nom_facultad = nom_facultad;
+    }
+
+    public void setNivel_academico(String nivel_academico) {
+        this.nivel_academico = nivel_academico;
+    }
+    
+    
 }

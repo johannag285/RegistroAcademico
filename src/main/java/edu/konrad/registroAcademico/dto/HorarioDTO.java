@@ -7,6 +7,8 @@ package edu.konrad.registroAcademico.dto;
 
 import edu.konrad.registroAcademico.entities.GrupoEntity;
 import edu.konrad.registroAcademico.entities.HorarioEntity;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -68,4 +70,70 @@ public class HorarioDTO {
        entity.setSalon_clase(this.salon_clase);
        return entity;
     }
+    
+    /**
+     * Conversor lista entidad horario a lista de objetos horario
+     * @param horarioEntitys
+     * @return listaObjetoHorario
+     */
+    public static List<HorarioDTO> toListHorario(List<HorarioEntity> horarioEntitys){
+        List<HorarioDTO> listaObjetoHorario = new ArrayList<>();
+        for(int i=0; i<horarioEntitys.size();i++ ){
+            listaObjetoHorario.add(new HorarioDTO (horarioEntitys.get(i)));
+        }
+        return listaObjetoHorario;
+    }  
+
+    /**
+     * Métodos get y set
+     */
+    public Long getId() {
+        return id;
+    }
+
+    public String getDia_horario() {
+        return dia_horario;
+    }
+
+    public long getInicio_clase() {
+        return inicio_clase;
+    }
+
+    public long getFin_clase() {
+        return fin_clase;
+    }
+
+    public String getSalon_clase() {
+        return salon_clase;
+    }
+
+    public GrupoEntity getGrupo_id() {
+        return grupo_id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setDia_horario(String dia_horario) {
+        this.dia_horario = dia_horario;
+    }
+
+    public void setInicio_clase(long inicio_clase) {
+        this.inicio_clase = inicio_clase;
+    }
+
+    public void setFin_clase(long fin_clase) {
+        this.fin_clase = fin_clase;
+    }
+
+    public void setSalon_clase(String salon_clase) {
+        this.salon_clase = salon_clase;
+    }
+
+    public void setGrupo_id(GrupoEntity grupo_id) {
+        this.grupo_id = grupo_id;
+    }
+    
+    
 }
