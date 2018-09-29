@@ -28,5 +28,6 @@ public class ApplicationConfig  extends Application{
     private void addResourcesClasses(Set<Class<?>> resources){
         resources.add(PersonaResources.class);
         resources.add(CoordinadorResources.class);
+        resources.add(CursoResources.class);
     }
 }
