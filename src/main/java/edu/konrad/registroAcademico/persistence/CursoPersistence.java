@@ -29,7 +29,7 @@ public class CursoPersistence {
    */
     
     public List<CursoEntity> finAll(){
-        Query todos = entityManager.createQuery("select p from CursoEntity p" );
+        Query todos = entityManager.createQuery("select p from Curso p" );
         return todos.getResultList();
     }
     

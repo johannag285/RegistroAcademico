@@ -29,7 +29,7 @@ public class ProfesorPersistence {
      * @return lista de profesor
      */
     public List<ProfesorEntity> findAll() {
-        Query todos = entityManager.createQuery("select p from ProfesorEntity p");
+        Query todos = entityManager.createQuery("select p from Profesor p");
         return todos.getResultList();
     }
 

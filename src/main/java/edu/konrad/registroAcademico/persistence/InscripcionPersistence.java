@@ -28,7 +28,7 @@ public class InscripcionPersistence {
    */
     
     public List<InscripcionEntity> finAll(){
-        Query todos = entityManager.createQuery("select p from InscripcionEntity p" );
+        Query todos = entityManager.createQuery("select p from Inscripcion p" );
         return todos.getResultList();
     }
     

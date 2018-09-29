@@ -29,7 +29,7 @@ public class HorarioPersistence {
      * @return lista de horarios
      */
     public List<HorarioEntity> findAll() {
-        Query todos = entityManager.createQuery("select p from HorarioEntity p");
+        Query todos = entityManager.createQuery("select p from Horario p");
         return todos.getResultList();
     }
 

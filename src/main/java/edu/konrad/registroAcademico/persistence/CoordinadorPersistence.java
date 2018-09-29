@@ -29,7 +29,7 @@ public class CoordinadorPersistence {
    */
   
    public List<CoordinadorEntity> findAll(){
-        Query todos = entityManager.createQuery("select p from CoordinadorEntity p");
+        Query todos = entityManager.createQuery("select p from Coordinador p");
         return todos.getResultList();
     }
    

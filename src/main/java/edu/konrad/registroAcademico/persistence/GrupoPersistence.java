@@ -29,7 +29,7 @@ public class GrupoPersistence {
      * @return lista de grupos
      */
     public List<GrupoEntity> findAll() {
-        Query todos = entityManager.createQuery("select p from GrupoEntity p");
+        Query todos = entityManager.createQuery("select p from Grupo p");
         return todos.getResultList();
     }
 

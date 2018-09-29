@@ -27,7 +27,7 @@ public class PersonaPersistence {
    */  
     
     public List<PersonaEntity> findAll(){
-        Query todos = entityManager.createQuery("select p from PersonaEntity p");
+        Query todos = entityManager.createQuery("select p from Persona p");
         return todos.getResultList();
     }
     
