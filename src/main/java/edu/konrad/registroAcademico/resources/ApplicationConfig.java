@@ -17,7 +17,7 @@ import javax.ws.rs.core.Application;
  */
 
 @ApplicationPath("/api")
-public class AplicationConfig  extends Application{
+public class ApplicationConfig  extends Application{
     
     @Override
     public Set<Class<?>> getClasses(){
