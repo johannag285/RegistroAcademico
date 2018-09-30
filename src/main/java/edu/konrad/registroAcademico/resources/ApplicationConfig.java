@@ -29,5 +29,6 @@ public class ApplicationConfig  extends Application{
         resources.add(PersonaResources.class);
         resources.add(CoordinadorResources.class);
         resources.add(CursoResources.class);
+        resources.add(InscripcionResources.class);
     }
 }
