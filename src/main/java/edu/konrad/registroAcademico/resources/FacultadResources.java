@@ -50,7 +50,7 @@ public class FacultadResources {
      */
     @GET
     @Path("{id: \\d+}")
-    public FacultadDTO getCoordinador(@PathParam("id")Long id){
+    public FacultadDTO getFacultad(@PathParam("id")Long id){
         FacultadEntity facultad = facultadLogic.getFacultad(id);
         if (facultad == null){
             throw new RuntimeException("La facultad NO existe");
