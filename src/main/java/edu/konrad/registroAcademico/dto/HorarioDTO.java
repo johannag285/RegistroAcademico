@@ -85,6 +85,13 @@ public class HorarioDTO {
     }  
 
     /**
+     * Constructor por defecto
+     */
+    public HorarioDTO() {
+    }
+    
+
+    /**
      * Métodos get y set
      */
     public Long getId() {

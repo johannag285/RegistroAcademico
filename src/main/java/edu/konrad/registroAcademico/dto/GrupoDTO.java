@@ -47,7 +47,7 @@ public class GrupoDTO {
     /**
      * Mapeo de tabla a objeto
      *
-     * @param estudianteEntity
+     * @param grupoEntity
      */
     public GrupoDTO(GrupoEntity grupoEntity) {
         this.id = grupoEntity.getId_grupo();

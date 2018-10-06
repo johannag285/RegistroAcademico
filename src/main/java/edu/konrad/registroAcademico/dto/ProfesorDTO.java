@@ -81,6 +81,14 @@ public class ProfesorDTO {
         }
         return listaObjetoProfesor;
     }  
+    
+    /**
+     * Constructor por defecto
+     */
+
+    public ProfesorDTO() {
+    }
+    
 
     /**
      * Métodos get y set
