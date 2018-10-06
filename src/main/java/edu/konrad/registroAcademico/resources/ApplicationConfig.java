@@ -22,10 +22,11 @@ public class ApplicationConfig  extends Application{
     @Override
     public Set<Class<?>> getClasses(){
         Set<Class<?>> resources = new HashSet<Class<?>>();
+        addRestResourceClasses(resources);
         return resources;
     }
     
-    private void addResourcesClasses(Set<Class<?>> resources){
+    private void addRestResourceClasses(Set<Class<?>> resources){
         resources.add(PersonaResources.class);
         resources.add(CoordinadorResources.class);
         resources.add(CursoResources.class);
