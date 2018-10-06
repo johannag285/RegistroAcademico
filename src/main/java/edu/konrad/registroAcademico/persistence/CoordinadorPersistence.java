@@ -6,7 +6,6 @@
 package edu.konrad.registroAcademico.persistence;
 
 import edu.konrad.registroAcademico.entities.CoordinadorEntity;
-import edu.konrad.registroAcademico.entities.PersonaEntity;
 import java.util.List;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
