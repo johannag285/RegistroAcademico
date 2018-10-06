@@ -88,7 +88,7 @@ public class ProgramaResources {
      * @param id
      */
     @DELETE
-    @Path("{productoId:\\d+}")
+    @Path("{programaId:\\d+}")
     public void deletePrograma(@PathParam("programaId") Long id) {
         ProgramaEntity programa = programaLogic.getPrograma(id);
         if (programa == null) {

@@ -89,7 +89,7 @@ public class HorarioResources {
      * @param id 
      */
     @DELETE
-    @Path("{facultadId:\\d+}")
+    @Path("{horariodId:\\d+}")
     public void deleteHorario(@PathParam("horarioId")Long id){
         HorarioEntity horario = horarioLogic.getHorario(id);
         if(horario == null){

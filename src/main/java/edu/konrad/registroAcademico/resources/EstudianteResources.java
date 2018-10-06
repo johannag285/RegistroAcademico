@@ -89,7 +89,7 @@ public class EstudianteResources {
      * @param id
      */
     @DELETE
-    @Path("{productoId:\\d+}")
+    @Path("{estudianteId:\\d+}")
     public void deleteEstudiante(@PathParam("estudianteId") Long id) {
         EstudianteEntity estudiante = estudianteLogic.getEstudiante(id);
         if (estudiante == null) {
