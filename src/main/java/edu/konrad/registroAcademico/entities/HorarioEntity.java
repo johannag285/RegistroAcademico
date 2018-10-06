@@ -5,6 +5,7 @@
  */
 package edu.konrad.registroAcademico.entities;
 
+import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -19,7 +20,7 @@ import javax.persistence.OneToMany;
  * @author Carlos David
  */
 @Entity (name = "Horario")
-public class HorarioEntity {
+public class HorarioEntity implements Serializable{
     
     /**
      * Llave primaria de la tabla Horario.

@@ -5,6 +5,7 @@
  */
 package edu.konrad.registroAcademico.entities;
 
+import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -17,7 +18,7 @@ import javax.persistence.Id;
  */
 
 @Entity (name ="Facultad")
-public class FacultadEntity {
+public class FacultadEntity implements Serializable{
     
     /**
      * Llave primaria de la tabla Facultad.
