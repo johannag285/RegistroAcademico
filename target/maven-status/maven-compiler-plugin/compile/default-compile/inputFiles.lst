@@ -1,17 +1,51 @@
-C:\Users\Carlos David\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\entities\EstudianteEntity.java
-C:\Users\Carlos David\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\persistence\FacultadPersistence.java
-C:\Users\Carlos David\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\entities\PersonaEntity.java
-C:\Users\Carlos David\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\entities\GrupoEntity.java
-C:\Users\Carlos David\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\entities\ProfesorEntity.java
-C:\Users\Carlos David\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\persistence\ProfesorPersistence.java
-C:\Users\Carlos David\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\entities\CoordinadorEntity.java
-C:\Users\Carlos David\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\persistence\InscripcionPersistence.java
-C:\Users\Carlos David\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\persistence\CursoPersistence.java
-C:\Users\Carlos David\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\persistence\HorarioPersistence.java
-C:\Users\Carlos David\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\entities\FacultadEntity.java
-C:\Users\Carlos David\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\persistence\PersonaPersistence.java
-C:\Users\Carlos David\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\entities\CursoEntity.java
-C:\Users\Carlos David\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\entities\ProgramaEntity.java
-C:\Users\Carlos David\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\persistence\CoordinadorPersistence.java
-C:\Users\Carlos David\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\entities\HorarioEntity.java
-C:\Users\Carlos David\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\entities\InscripcionEntity.java
+C:\Users\johan.LAPTOP-UON5Q3HI\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\dto\EstudianteDTO.java
+C:\Users\johan.LAPTOP-UON5Q3HI\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\resources\HorarioResources.java
+C:\Users\johan.LAPTOP-UON5Q3HI\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\dto\FacultadDTO.java
+C:\Users\johan.LAPTOP-UON5Q3HI\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\logic\FacultadLogic.java
+C:\Users\johan.LAPTOP-UON5Q3HI\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\logic\GrupoLogic.java
+C:\Users\johan.LAPTOP-UON5Q3HI\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\resources\GrupoResources.java
+C:\Users\johan.LAPTOP-UON5Q3HI\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\dto\PersonaDTO.java
+C:\Users\johan.LAPTOP-UON5Q3HI\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\persistence\GrupoPersistence.java
+C:\Users\johan.LAPTOP-UON5Q3HI\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\entities\CursoEntity.java
+C:\Users\johan.LAPTOP-UON5Q3HI\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\entities\PersonaEntity.java
+C:\Users\johan.LAPTOP-UON5Q3HI\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\resources\ProfesorResources.java
+C:\Users\johan.LAPTOP-UON5Q3HI\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\persistence\CursoPersistence.java
+C:\Users\johan.LAPTOP-UON5Q3HI\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\entities\CoordinadorEntity.java
+C:\Users\johan.LAPTOP-UON5Q3HI\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\logic\EstudianteLogic.java
+C:\Users\johan.LAPTOP-UON5Q3HI\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\entities\FacultadEntity.java
+C:\Users\johan.LAPTOP-UON5Q3HI\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\logic\InscripcionLogic.java
+C:\Users\johan.LAPTOP-UON5Q3HI\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\entities\InscripcionEntity.java
+C:\Users\johan.LAPTOP-UON5Q3HI\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\resources\ApplicationConfig.java
+C:\Users\johan.LAPTOP-UON5Q3HI\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\logic\ProgramaLogic.java
+C:\Users\johan.LAPTOP-UON5Q3HI\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\resources\CursoResources.java
+C:\Users\johan.LAPTOP-UON5Q3HI\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\dto\InscripcionDTO.java
+C:\Users\johan.LAPTOP-UON5Q3HI\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\resources\FacultadResources.java
+C:\Users\johan.LAPTOP-UON5Q3HI\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\logic\ProfesorLogic.java
+C:\Users\johan.LAPTOP-UON5Q3HI\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\resources\PersonaResources.java
+C:\Users\johan.LAPTOP-UON5Q3HI\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\entities\EstudianteEntity.java
+C:\Users\johan.LAPTOP-UON5Q3HI\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\resources\ProgramaResources.java
+C:\Users\johan.LAPTOP-UON5Q3HI\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\persistence\ProfesorPersistence.java
+C:\Users\johan.LAPTOP-UON5Q3HI\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\entities\ProfesorEntity.java
+C:\Users\johan.LAPTOP-UON5Q3HI\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\entities\HorarioEntity.java
+C:\Users\johan.LAPTOP-UON5Q3HI\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\persistence\CoordinadorPersistence.java
+C:\Users\johan.LAPTOP-UON5Q3HI\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\logic\CoordinadorLogic.java
+C:\Users\johan.LAPTOP-UON5Q3HI\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\dto\ProfesorDTO.java
+C:\Users\johan.LAPTOP-UON5Q3HI\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\resources\InscripcionResources.java
+C:\Users\johan.LAPTOP-UON5Q3HI\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\entities\GrupoEntity.java
+C:\Users\johan.LAPTOP-UON5Q3HI\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\logic\CursoLogic.java
+C:\Users\johan.LAPTOP-UON5Q3HI\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\persistence\EstudiantePersistence.java
+C:\Users\johan.LAPTOP-UON5Q3HI\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\logic\PersonaLogic.java
+C:\Users\johan.LAPTOP-UON5Q3HI\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\dto\GrupoDTO.java
+C:\Users\johan.LAPTOP-UON5Q3HI\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\dto\CoordinadorDTO.java
+C:\Users\johan.LAPTOP-UON5Q3HI\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\dto\ProgramaDTO.java
+C:\Users\johan.LAPTOP-UON5Q3HI\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\persistence\InscripcionPersistence.java
+C:\Users\johan.LAPTOP-UON5Q3HI\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\persistence\FacultadPersistence.java
+C:\Users\johan.LAPTOP-UON5Q3HI\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\persistence\ProgramaPersistence.java
+C:\Users\johan.LAPTOP-UON5Q3HI\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\logic\HorarioLogic.java
+C:\Users\johan.LAPTOP-UON5Q3HI\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\persistence\PersonaPersistence.java
+C:\Users\johan.LAPTOP-UON5Q3HI\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\entities\ProgramaEntity.java
+C:\Users\johan.LAPTOP-UON5Q3HI\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\resources\CoordinadorResources.java
+C:\Users\johan.LAPTOP-UON5Q3HI\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\dto\HorarioDTO.java
+C:\Users\johan.LAPTOP-UON5Q3HI\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\persistence\HorarioPersistence.java
+C:\Users\johan.LAPTOP-UON5Q3HI\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\resources\EstudianteResources.java
+C:\Users\johan.LAPTOP-UON5Q3HI\Documents\GitHub\RegistroAcademico\src\main\java\edu\konrad\registroAcademico\dto\CursoDTO.java
