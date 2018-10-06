@@ -27,15 +27,15 @@ public class ApplicationConfig  extends Application{
     }
     
     private void addRestResourceClasses(Set<Class<?>> resources){
-        resources.add(PersonaResources.class);
-        resources.add(CoordinadorResources.class);
-        resources.add(CursoResources.class);
-        resources.add(InscripcionResources.class);
-        resources.add(EstudianteResources.class);
-        resources.add(FacultadResources.class);
-        resources.add(GrupoResources.class);
-        resources.add(HorarioResources.class);
-        resources.add(ProfesorResources.class);
-        resources.add(ProgramaResources.class);
+        resources.add(edu.konrad.registroAcademico.resources.CoordinadorResources.class);
+        resources.add(edu.konrad.registroAcademico.resources.CursoResources.class);
+        resources.add(edu.konrad.registroAcademico.resources.EstudianteResources.class);
+        resources.add(edu.konrad.registroAcademico.resources.FacultadResources.class);
+        resources.add(edu.konrad.registroAcademico.resources.GrupoResources.class);
+        resources.add(edu.konrad.registroAcademico.resources.HorarioResources.class);
+        resources.add(edu.konrad.registroAcademico.resources.InscripcionResources.class);
+        resources.add(edu.konrad.registroAcademico.resources.PersonaResources.class);
+        resources.add(edu.konrad.registroAcademico.resources.ProfesorResources.class);
+        resources.add(edu.konrad.registroAcademico.resources.ProgramaResources.class);
     }
 }
